@@ -13,9 +13,11 @@ func _process(delta):
 
 func _on_host_pressed():
 	gamestate.host_game()
+	visible = false
 	pass # Replace with function body.
 
 
 func _on_join_pressed():
 	gamestate.join_game()
+	visible = false
 	pass # Replace with function body.

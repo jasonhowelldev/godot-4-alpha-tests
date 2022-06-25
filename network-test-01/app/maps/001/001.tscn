@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxuu7refjsbvn"]
+
+[ext_resource type="PackedScene" uid="uid://bc4i66lvie5nc" path="res://app/maps/mapitems/floor.tscn" id="1_tm3ja"]
+
+[node name="001" type="Node2D"]
+
+[node name="floor-000" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(35, 312)
+
+[node name="floor-001" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(35, 376)
+
+[node name="floor-002" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(35, 440)
+
+[node name="floor-003" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(35, 504)
+
+[node name="floor-004" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(35, 568)
+
+[node name="floor-005" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(99, 568)
+
+[node name="floor-006" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(163, 568)
+
+[node name="floor-007" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(227, 568)
+
+[node name="floor-008" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(291, 568)
+
+[node name="floor-009" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(355, 568)
+
+[node name="floor-010" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(419, 568)
+
+[node name="floor-011" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(483, 568)
+
+[node name="floor-012" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(547, 568)
+
+[node name="floor-013" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(611, 568)
+
+[node name="floor-014" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(675, 568)
+
+[node name="floor-015" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(739, 568)
+
+[node name="floor-016" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(803, 568)
+
+[node name="floor-017" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(867, 568)
+
+[node name="floor-018" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(931, 568)
+
+[node name="floor-019" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(995, 568)
+
+[node name="floor-020" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(995, 504)
+
+[node name="floor-021" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(995, 440)
+
+[node name="floor-022" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(995, 376)
+
+[node name="floor-023" parent="." instance=ExtResource( "1_tm3ja" )]
+position = Vector2(995, 312)

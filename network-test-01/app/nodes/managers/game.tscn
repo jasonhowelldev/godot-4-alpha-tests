@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3b25be443sv5"]
+[gd_scene load_steps=4 format=3 uid="uid://b3b25be443sv5"]
 
 [ext_resource type="PackedScene" uid="uid://btf7j413etk16" path="res://app/nodes/network/networkserver.tscn" id="1_tx1fw"]
 [ext_resource type="PackedScene" uid="uid://b64mv6bdcm70f" path="res://app/ui/lobby.tscn" id="2_xggpc"]
+[ext_resource type="PackedScene" uid="uid://dxuu7refjsbvn" path="res://app/maps/001/001.tscn" id="3_gr602"]
 
 [node name="game" type="Node"]
 
@@ -18,3 +19,7 @@ auto_spawn = true
 [node name="ui" type="Node" parent="."]
 
 [node name="lobby" parent="ui" instance=ExtResource( "2_xggpc" )]
+
+[node name="level" type="Node" parent="."]
+
+[node name="001" parent="level" instance=ExtResource( "3_gr602" )]
