@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3b25be443sv5"]
+
+[ext_resource type="PackedScene" uid="uid://btf7j413etk16" path="res://app/nodes/network/networkserver.tscn" id="1_tx1fw"]
+[ext_resource type="PackedScene" uid="uid://b64mv6bdcm70f" path="res://app/ui/lobby.tscn" id="2_xggpc"]
+
+[node name="game" type="Node"]
+
+[node name="networkserver" parent="." instance=ExtResource( "1_tx1fw" )]
+PORT = 9080
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://app/nodes/actors/player.tscn")
+spawn_path = NodePath("../players")
+auto_spawn = true
+
+[node name="players" type="Node2D" parent="."]
+
+[node name="ui" type="Node" parent="."]
+
+[node name="lobby" parent="ui" instance=ExtResource( "2_xggpc" )]

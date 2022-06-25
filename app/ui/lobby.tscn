@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://b64mv6bdcm70f"]
+
+[ext_resource type="Script" path="res://app/ui/lobby.gd" id="1_c7lxn"]
+
+[node name="lobby" type="Control"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource( "1_c7lxn" )
+
+[node name="HFlowContainer" type="HFlowContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="host" type="Button" parent="HFlowContainer"]
+offset_right = 43.0
+offset_bottom = 31.0
+text = "host"
+
+[node name="join" type="Button" parent="HFlowContainer"]
+offset_top = 35.0
+offset_right = 37.0
+offset_bottom = 66.0
+text = "join"
+
+[connection signal="pressed" from="HFlowContainer/host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="HFlowContainer/join" to="." method="_on_join_pressed"]

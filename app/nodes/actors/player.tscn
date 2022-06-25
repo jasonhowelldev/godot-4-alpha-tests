@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://cjkw5mpomah6x"]
+
+[ext_resource type="Script" path="res://app/nodes/actors/player.gd" id="1_it243"]
+[ext_resource type="Script" path="res://app/nodes/actors/networking.gd" id="2_gkoen"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cfbaw"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_gdjth"]
+properties/0/path = NodePath(":sync_position")
+properties/0/spawn = true
+properties/0/sync = true
+properties/1/path = NodePath(":sync_is_jumping")
+properties/1/spawn = true
+properties/1/sync = true
+properties/2/path = NodePath(":sync_velocity")
+properties/2/spawn = true
+properties/2/sync = true
+
+[node name="player" type="CharacterBody2D"]
+position = Vector2(100, 100)
+script = ExtResource( "1_it243" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( "RectangleShape2D_cfbaw" )
+
+[node name="Control" type="Control" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="labelplayername" type="Label" parent="Control"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "labelplayername"
+
+[node name="networking" type="Node" parent="."]
+script = ExtResource( "2_gkoen" )
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="networking"]
+replication_config = SubResource( "SceneReplicationConfig_gdjth" )
